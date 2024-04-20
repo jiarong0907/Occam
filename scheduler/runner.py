@@ -25,7 +25,7 @@ class Runner:
         self.regextree_dev_opt_thresh = regextree_dev_opt_thresh
 
         path_prefix_regex = "data_process/synthetic_regex/" + folder
-        path_prefix_workload = "simulation/workload/" + folder
+        path_prefix_workload = "workload/" + folder
 
         self.path_dc_database = path_prefix_regex + "/dcs.txt"
         self.path_device_database = path_prefix_regex + "/devices.txt"
