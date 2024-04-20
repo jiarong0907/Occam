@@ -2,7 +2,6 @@ from __future__ import annotations
 import time
 from typing import TYPE_CHECKING
 
-import functools
 from heapq import heappush
 from regex.greenery.fsm import fsm
 from regex.regextool import RegexTool

@@ -4,7 +4,6 @@ from typing import TYPE_CHECKING
 
 from regex.greenery.lego import lego, parse, from_fsm
 from regex.greenery.fsm import fsm, anything_else
-from tools.util import get_matched_devices
 
 if TYPE_CHECKING:
     from scheduler.runner import Runner
