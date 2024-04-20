@@ -24,13 +24,11 @@ class Runner:
         self.use_regextree_dev_opt = use_regextree_dev_opt
         self.regextree_dev_opt_thresh = regextree_dev_opt_thresh
 
-        path_prefix_regex = "data_process/synthetic_regex/" + folder
         path_prefix_workload = "workload/" + folder
-
-        self.path_dc_database = path_prefix_regex + "/dcs.txt"
-        self.path_device_database = path_prefix_regex + "/devices.txt"
-        self.path_reg2dev = path_prefix_regex + "/regex_device_map.long"
-        self.path_fsm_cache = path_prefix_regex + "/reg2fsm.pkl"
+        self.path_dc_database = path_prefix_workload + "/dcs.txt"
+        self.path_device_database = path_prefix_workload + "/devices.txt"
+        self.path_reg2dev = path_prefix_workload + "/regex_device_map.long"
+        self.path_fsm_cache = path_prefix_workload + "/reg2fsm.pkl"
         self.path_workload = path_prefix_workload + "/workload_synthetic_gs" + str(gs) + "_es" + str(es) + ".txt"
 
         self.task_to_metadata = {}

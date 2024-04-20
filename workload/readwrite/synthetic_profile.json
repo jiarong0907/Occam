@@ -1,0 +1,122 @@
+{
+    "dc_profile": {
+        "fabric_count": 1,
+        "s_fsw_count": 8,
+        "pod_count": 96,
+        "ssw_count": 36,
+        "rsw_count": 48
+    },
+    "dc_count_list": [
+        4,
+        4,
+        4,
+        4
+    ],
+    "regex_type_distr": {
+        "whole_region": 0.001,
+        "whole_dc": 0.01,
+        "whole_fabric": 0.01,
+        "whole_pod": 1,
+        "whole_s": 0.5,
+        "multi_dc": {
+            "weight": 0.005,
+            "count_distr": {
+                "2": 1
+            },
+            "select_way": "random"
+        },
+        "multi_fabric": {
+            "weight": 0,
+            "count_distr": {},
+            "select_way": "random"
+        },
+        "multi_s": {
+            "weight": 0.1,
+            "count_distr": {
+                "2": 2,
+                "3": 2,
+                "4": 3
+            },
+            "select_way": "random"
+        },
+        "multi_pod": {
+            "weight": 0.1,
+            "count_distr": {
+                "8": 2,
+                "16": 3,
+                "32": 0,
+                "48": 0
+            },
+            "select_way": "random"
+        },
+        "multi_ssw": {
+            "weight": 1,
+            "count_distr": {
+                "1": 2,
+                "4": 2,
+                "8": 2,
+                "16": 2,
+                "24": 2,
+                "36": 2
+            },
+            "select_way": "random"
+        },
+        "multi_fsw": {
+            "weight": 1,
+            "count_distr": {
+                "1": 1,
+                "2": 1,
+                "3": 1,
+                "4": 1,
+                "8": 0.5
+            },
+            "select_way": "random"
+        },
+        "multi_rsw": {
+            "weight": 1,
+            "count_distr": {
+                "1": 2,
+                "4": 2,
+                "8": 2,
+                "16": 2,
+                "32": 2,
+                "48": 2
+            },
+            "select_way": "random"
+        },
+        "cross_prod_podAndFsw": {
+            "weight": 0.001,
+            "pod_count_distr": {
+                "8": 2,
+                "16": 2,
+                "32": 0,
+                "64": 0,
+                "96": 0
+            },
+            "fsw_count_distr": {
+                "1": 1,
+                "2": 2,
+                "4": 2,
+                "8": 0.2
+            },
+            "select_way": "random"
+        },
+        "cross_prod_sAndSsw": {
+            "weight": 0.001,
+            "s_count_distr": {
+                "1": 1,
+                "2": 2,
+                "4": 3,
+                "8": 1
+            },
+            "ssw_count_distr": {
+                "4": 1,
+                "8": 2,
+                "18": 1,
+                "36": 0
+            },
+            "select_way": "random"
+        }
+    },
+    "regex_sample_count": 3000
+}
