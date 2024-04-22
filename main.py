@@ -24,7 +24,7 @@ def _configure() -> argparse.Namespace:
         "-f",
         dest="folder",
         required=False,
-        default="lessdc",
+        default="wait_time",
         help="The folder of run",
     )
     parser.add_argument(
